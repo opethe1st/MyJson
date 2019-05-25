@@ -9,6 +9,8 @@ jobs:
     steps:
       - checkout
       - run: cd src
+      - run: python -m venv .venv
+      - run: source .venv/bin/activate
       - run: pip install tox
       - run: tox
 
