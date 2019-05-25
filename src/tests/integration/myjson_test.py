@@ -15,6 +15,7 @@ import os
         ('test that this works for a sequence of mappings', '[{"key": "value"}, {"key2": "value"}]'),
         ('test that this works for a string', '"value"'),
         ('test that this works for a realistic json ', '"value"'),
+        ('test that this works for a realistic json ', '1234'), # added deliberately failing test to see if ci catches it
     ]
 )
 def test_loading(description, string):
