@@ -12,7 +12,7 @@ jobs:
       - run: python -m venv .venv
       - run: source .venv/bin/activate
       - run: pip install tox
-      - run: tox
+      - run: cd src && tox
 
 # Orchestrate or schedule a set of jobs, see https://circleci.com/docs/2.0/workflows/
 workflows:
