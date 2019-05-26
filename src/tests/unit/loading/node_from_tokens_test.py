@@ -214,7 +214,7 @@ class TestMappingNodeFromTokens(TestCase):
             ], start=0),
             (MappingNode(mapping={
                 ScalarNode(data='key'): SequenceNode(items=[ScalarNode(data='value')]),
-                }),
+            }),
             7)
         )
 
